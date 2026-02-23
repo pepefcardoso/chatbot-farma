@@ -1,0 +1,96 @@
+{
+  "farmacia": {
+    "nome": "Farmácias Santa Luzia",
+    "endereco": "SC-390, 4948 - KM-60, Tubarão - SC",
+    "telefone": "(48) 3632-6351",
+    "whatsapp": "(48) 99156-5677"
+  },
+  "horarios": {
+    "segunda_a_sexta": "08h às 12h e 13h30 às 20h",
+    "sabado": "08h às 12h e 13h30 às 20h",
+    "domingo": "Fechado",
+    "feriados_nacionais": "Fechado",
+    "e_24_horas": false,
+    "fechado_almoco": "A farmácia fecha para almoço das 12h às 13h30, todos os dias úteis e sábados. Não há atendimento nesse intervalo.",
+    "farmaceutico_plantao": {
+      "horario": "08h às 12h e 13h30 às 20h (seg a sáb)",
+      "almoco": "12h às 13h30"
+    }
+  },
+  "entrega": {
+    "cidades_atendidas": [
+      "Tubarão",
+      "Capivari de Baixo",
+      "Jaguaruna",
+      "Laguna"
+    ],
+    "frete_gratis_a_partir_de": 200.0,
+    "horario_motoboy": "09h às 18h (seg a sáb)",
+    "entrega_agendada": true,
+    "retirada_na_loja": true,
+    "tempo_medio_entrega": "30 a 60 minutos",
+    "observacao": "Pedidos após 18h somente para retirada na loja"
+  },
+  "pagamento": {
+    "pix": {
+      "aceita": true,
+      "chave": "07847597000234",
+      "chave_tipo": "cnpj"
+    },
+    "cartao_credito": {
+      "aceita": true,
+      "parcelamento_minimo_valor": 60.0,
+      "parcelas_maximas": 3
+    },
+    "cartao_debito": true,
+    "dinheiro": true,
+    "beneficios": {
+      "aceita": false
+    }
+  },
+  "servicos": {
+    "aplicacao_injetavel": {
+      "disponivel": true,
+      "agendamento": false,
+      "observacao": "Realizamos aplicações de injetáveis, mas é obrigatória a apresentação da primeira via da receita médica. Sem a receita, não é possível realizar o procedimento."
+    },
+    "farmacia_popular": true,
+    "furo_de_orelha": {
+      "disponivel": true,
+      "publico": "bebês e adultos",
+      "agendamento": false,
+      "observacao": "Realizado pela farmacêutica, sem custo adicional"
+    },
+    "testes_rapidos": {
+      "disponivel": true,
+      "tipos": ["COVID-19 (antígeno)", "Dengue (NS1)", "Strep A (faringite)"],
+      "agendamento": false
+    },
+    "curativo": {
+      "disponivel": true,
+      "agendamento": false,
+      "observacao": "Feito pelo farmacêutico, sem custo para curativos simples"
+    },
+    "nebulizacao_inalacao": {
+      "disponivel": true,
+      "agendamento": false
+    },
+    "orientacao_farmaceutica": {
+      "disponivel": true,
+      "horario": "08h às 12h e 13h30 às 20h (seg a sáb)"
+    },
+    "manipulacao": false
+  },
+  "politicas": {
+    "troca_perfumaria": "Trocas aceitas em até 30 dias com nota fiscal, produto sem uso e embalagem original. Não aceitamos troca por motivo de cheiro ou preferência pessoal após abertura.",
+    "receitas_outros_estados": true,
+    "receita_digital": true,
+    "receita_controle_especial": "Aceita original. Algumas categorias (B1/B2) exigem retenção da receita."
+  },
+  "contato_e_feedback": {
+    "reclamacoes_sugestoes": "WhatsApp (48) 99156-5677"
+  },
+  "catalogo": {
+    "disponivel": false
+  }
+}
