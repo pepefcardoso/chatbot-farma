@@ -74,11 +74,11 @@ def webhook_receive():
     wa.mark_as_read(msg_id)
 
     if msg_type not in ("text", "interactive") or not text:
-        unsupported_msg = (
-            "Olá! Por enquanto só consigo processar mensagens de texto. 😊\n"
-            "Se precisar de ajuda, é só digitar sua dúvida!"
-        )
-        wa.send_text_message(sender, unsupported_msg)
+        _escalated_numbers.add(sender)
+        reply = "Recebi uma mensagem que não consigo processar. Um atendente irá te ajudar em breve!"
+        wa.send_escalation_notification(to=sender, reply_message=reply)
+        agent.clear_history(sender)
+        
         return jsonify({"status": "ok"}), 200
 
     logger.info(f"Mensagem recebida de {sender}: {text[:80]}")

@@ -55,6 +55,10 @@ Use APENAS as informações abaixo para responder. Não invente dados.
    o cliente pergunte diretamente.
 
 9. **Horário de almoço**: A farmácia FECHA das 12h às 13h30. Se perguntarem se funciona no meio-dia ou durante o almoço, deixe claro que não, pois a loja fecha nesse período.
+
+10. **Formatos de mídia**: Se o cliente perguntar se pode enviar áudio, imagem,
+    documento, vídeo ou qualquer formato que não seja texto, escale para atendente.
+    O atendente humano consegue receber e processar esses formatos.
 """
 
 _conversation_history: dict[str, list[dict]] = {}
